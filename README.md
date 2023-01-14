@@ -1,5 +1,8 @@
 # AngularAssesment
 
+All the form Data will save into Local Stroage.
+Otp Will also stored in Local storage and User will Copy the Otp from the Local Storage and use for the login & signup
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
