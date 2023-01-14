@@ -1,0 +1,22 @@
+<div class="main-block">
+    <h1>Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="login()" >
+      
+      <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+      <input type="text" formControlName="mobile" maxlength="10" [OnlyNumber] name="mobile" id="mobile" placeholder="Mobile Number" required/>
+     
+      <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+      <input type="text" formControlName="otp" name="name"  id="otp" placeholder="otp" required/>
+
+      <div *ngIf="otpMessage.length>0">
+        <span type="text">{{otpMessage}}</span>
+      </div>
+      <hr>
+        <div class="btn-block">
+        <button type="submit">{{buttonMessage}}</button>
+      </div>
+      <a routerLink="/signup">New User? Click to signup!!</a>
+    </form>
+  </div>
+
+  

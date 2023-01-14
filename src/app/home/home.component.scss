@@ -1,0 +1,175 @@
+// .onboarding {
+//     display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+
+// width: 1132px;
+// height: 48px;
+
+// /* Light/Background/Paper */
+
+// background: #FFFFFF;
+
+// /* Inside auto layout */
+
+// flex: none;
+// order: 0;
+// align-self: stretch;
+// flex-grow: 0;
+// }
+// .tab{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     padding: 0px;
+    
+//     width: 1132px;
+//     height: 48px;
+    
+//     /* Light/Background/Paper */
+    
+//     background: #FFFFFF;
+    
+//     /* Inside auto layout */
+    
+//     flex: none;
+//     order: 0;
+//     align-self: stretch;
+//     flex-grow: 0;
+// }
+// .tihead{
+//     width: 174px;
+// height: 24px;
+
+// /* Light/Components/Button Medium */
+
+// font-family: 'Inter';
+// font-style: normal;
+// font-weight: 500;
+// font-size: 14px;
+// line-height: 24px;
+// /* identical to box height, or 171% */
+
+// text-align: center;
+// letter-spacing: 0.4px;
+// text-transform: uppercase;
+
+// /* Light/Primary/Main */
+
+// color: #9155FD;
+
+
+// /* Inside auto layout */
+
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+// }
+// body{
+//     display: flex;
+// flex-direction: row;
+// align-items: flex-start;
+// padding: 20px 0px 0px;
+// gap: 24px;
+
+// width: 1092px;
+// height: 253px;
+
+
+// /* Inside auto layout */
+
+// flex: none;
+// order: 0;
+// align-self: stretch;
+// flex-grow: 0;
+// }
+// .row{
+//     display: flex;
+// flex-direction: row;
+// align-items: center;
+// padding: 20px 0px 0px;
+// gap: 24px;
+
+// width: 1092px;
+// height: 76px;
+
+
+// /* Inside auto layout */
+
+// flex: none;
+// order: 1;
+// align-self: stretch;
+// flex-grow: 0;
+// }
+// .input-text{
+//     display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 3px;
+
+// width: 534px;
+// height: 56px;
+
+// border-radius: 6px;
+
+// /* Inside auto layout */
+
+// flex: none;
+// order: 0;
+// flex-grow: 1;
+// }
+@import "~@ng-select/ng-select/themes/default.theme.css";
+h2{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.tabs{
+    margin: 10px 0 0 30px;
+}
+.tab{
+    margin: 40px;
+    padding: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    input{
+        width: 30%;
+        padding: 10px;
+        margin:10px 10px 0 10px ;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}
+.buttonGrp{
+    margin-left: 40px;
+    margin-top: 15px;
+   
+    button{
+        padding: 15px;
+        margin-left: 5px;
+        border: none;
+        background-color: red;
+        border-radius: 5px;
+        
+    }
+    .primary{
+        color: white;
+        border: none;
+        background-color:#9155FD;
+    }
+}
+.ng-select.custom {
+    border:1px solid;
+    margin-right: 10px;
+    margin-top: 4px;
+    padding: 5px;
+    min-height: 3px;
+    border-radius: 5px;
+    width: 20%;
+}
+.tab2{
+display: flex;
+align-items: center;
+margin-left: 8px;
+}

@@ -1,0 +1,24 @@
+export class Data{
+Name!:String
+CompanyName!:String
+Position!:String
+DateOfJoining!:String
+DateOfResiging!:String
+WorkDescription!:String
+UsedSkills!:String
+SkillsName!:String
+YearOfExp!:String
+ProjectTitle!:String
+ProjectUrl!:String
+ProjectDescription!:String
+ProjectDuration!:String
+LicName!:String
+IssuingOrganisation!:String
+CertificateLink!:String
+IssueDate!:String
+CourseName!:String
+CourseIssuingOrgainisation!:String
+Email!:String
+Phone!:Number
+SkyId!:String
+}

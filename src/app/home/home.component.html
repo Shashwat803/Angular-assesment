@@ -1,0 +1,78 @@
+<form #form="ngForm">
+    
+
+<div class="tabs">
+    <div class="tab">
+        <h2>General Information</h2>
+    <input type="text" placeholder="Name" #Name="ngModel" name="Name" [(ngModel)]="data.Name">
+    </div>
+    <div class="tab">
+        <h2>Experience</h2>
+        
+    <input type="text" CompanyName="ngModel" name="CompanyName" [(ngModel)]="data.CompanyName" placeholder="Company Name">
+    <input type="text" Position="ngModel" name="Position" [(ngModel)]="data.Position" placeholder="Position">
+    <input type="date" DateOfJoining="ngModel" name="DateOfJoining" [(ngModel)]="data.DateOfJoining" placeholder= "Date Of Joining">
+
+    <input type="date" DateOfResiging="ngModel" name="DateOfResiging" [(ngModel)]="data.DateOfResiging" placeholder="Date Of Resigning">
+    <input type="text" WorkDescription="ngModel" name="WorkDescription" [(ngModel)]="data.WorkDescription" placeholder="Work Description">
+    <input type="text" UsedSkills="ngModel" name="UsedSkills" [(ngModel)]="data.UsedSkills" placeholder="Used Skills">
+
+    </div>
+    <div class="tab">
+        <h2>Skills</h2>
+        <div class="tab2">
+        <ng-select
+             class="custom"
+            [items]="dropdownList"
+            bindLabel="item_text"
+            placeholder="Select"
+            [multiple]="true"
+            [(ngModel)]="data.SkillsName"
+            SkillsName="ngModel" name="SkillsName" >
+          </ng-select>
+    <!-- <input type="text" SkillsName="ngModel" name="SkillsName" [(ngModel)]="data.SkillsName" placeholder="Skills Name"> -->
+     <input type="text" YearOfExp="ngModel" name="YearOfExp" [(ngModel)]="data.YearOfExp" placeholder="Year of Experience"> 
+    </div>
+    </div>
+   <div class="tab">
+    <h2>Add Projects</h2>
+    
+<input type="text" ProjectTitle="ngModel" name="ProjectTitle" [(ngModel)]="data.ProjectTitle" placeholder="Project Title">
+<input type="text" ProjectUrl="ngModel" name="ProjectUrl" [(ngModel)]="data.ProjectUrl" placeholder="Project URL">
+<input type="text" ProjectDescription="ngModel" name="ProjectDescription" [(ngModel)]="data.ProjectDescription" placeholder="Project Description">
+<input type="text" ProjectDuration="ngModel" name="ProjectDuration" [(ngModel)]="data.ProjectDuration" placeholder="Project Duration">
+
+
+</div>
+<div class="tab">
+    <h2>Add license & certifications</h2>
+    
+<input type="text" LicName="ngModel" name="LicName" [(ngModel)]="data.LicName" placeholder="Name">
+<input type="text" IssuingOrganisation="ngModel" name="IssuingOrganisation" [(ngModel)]="data.IssuingOrganisation" placeholder="Issuing Organisation">
+<input type="text" CertificateLink="ngModel" name="CertificateLink" [(ngModel)]="data.CertificateLink" placeholder="Certficate Link">
+<input type="date"  IssueDate="ngModel" name="IssueDate" [(ngModel)]="data.IssueDate" placeholder="Issue Date">
+
+
+</div>
+<div class="tab">
+    <h2>Add Course</h2>
+
+<input type="text" CourseName="ngModel" name="CourseName" [(ngModel)]="data.CourseName" placeholder="Name">
+<input type="text" CourseIssuingOrgainisation="ngModel" name="CourseIssuingOrgainisation" [(ngModel)]="data.CourseIssuingOrgainisation" placeholder="Issuing Organisation">
+</div>
+
+<div class="tab">
+    <h2>Contact Info</h2>
+  
+<input type="email"  Email="ngModel" name="Email" [(ngModel)]="data.Email"  placeholder="Email">
+<input type="number"  Phone="ngModel" name="Phone"  [(ngModel)]="data.Phone" placeholder="Phone">
+<input type="text"  SkyId="ngModel" name="SkyId" [(ngModel)]="data.SkyId" placeholder="Skype Id">
+
+</div>
+<div class="buttonGrp">
+    <button class="primary" (click)="onSave()">Save</button>
+    <button>Cancel</button>
+    <button (click)="logout()">Logout</button>
+</div>
+</div>
+</form>

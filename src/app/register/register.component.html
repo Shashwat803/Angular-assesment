@@ -1,0 +1,28 @@
+<div class="main-block">
+    <h1>Registration</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="signup()">
+      
+      <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+      <input type="text" formControlName="email" name="email" id="email" placeholder="Email" required/>
+      <label id="icon" for="name"><i class="fas fa-user"></i></label>
+      <input type="text" formControlName="fullname" name="name" id="name" placeholder="Name" required/>
+      <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+      <input type="password" formControlName="password" name="password" id="password" placeholder="Password" required/>
+      <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+      <input type="text" formControlName="phone"  maxlength="10" [OnlyNumber] name="phone" id="phone" placeholder="Mobile Number" required/>
+      <div *ngIf="otpMessage.length>0">
+        <span>{{otpMessage}}</span>
+        <input  type="text" formControlName="otp" name="otp" id="otp" placeholder="OTP" required/>
+      </div>
+      <hr>
+        <div class="btn-block">
+        <button type="submit">Submit</button>
+      </div>
+     
+      
+      <a routerLink="/login">already registered? Click to Login!!</a>
+    </form>
+   
+  </div>
+
+  
